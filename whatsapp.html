@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
   <title>Whatsapp</title>
+  <link href="http://fonts.googleapis.com/css?family=Roboto:500,400" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/whatsapp-grid.css">
   <link rel="stylesheet" href="css/whatsapp.css">
@@ -12,7 +13,19 @@
       href="/images/icon.png" />
 </head>
 <body class="body page-whatsapp clearfix">
-  <div id="Header" class="header js--top"></div>
-  <div onClick="window.location='index.html';" class="element"></div>
+  <div id="Header" class="header clearfix js--top">
+    <div onClick="window.location='index.html';" class="element element-1"></div>
+    <p class="text">Whatsapp</p>
+    <div class="top">
+      <div class="container">
+        <div id="setup" class="anchorsendsetup"><a href="#anchor"><p style="color:black;">Setup</p></a></div>
+        <div class="element"></div>
+      </div>
+    </div>
+  </div>
+  <div class="setup clearfix">
+    <p class="text">Setup</p>
+    <div id="Setup" class="anchorsetup"><a name="anchor">Get started</a></div>
+  </div>
 </body>
 </html>
