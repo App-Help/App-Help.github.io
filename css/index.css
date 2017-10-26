@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #333333;
   font: 500 1.313em/1.38 Roboto;
   color: #ffffff;
 }
@@ -7,6 +7,7 @@ body {
 .content {
   position: relative;
   float: left;
+  z-index: 7;
   width: 100%;
   height: 814px;
   margin-top: 50px;
@@ -18,29 +19,24 @@ body {
   min-width: 120px;
   height: 120px;
   min-height: 120px;
-  border: 1px solid rgb(255, 255, 255);
-  background-color: #97be0d;
+  border-width: 4px;
+  border-style: solid;
 }
 
 .element:hover {
-  border: 2px solid #ffffff;
-  background-color: #5e7524;
-}
-
-.element:active {
-  background-color: #d0fb98;
+  border-style: solid;
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 9;
   width: 100%;
   height: 50px;
   margin: 0 auto;
-  background-color: #111818;
+  background-color: #4caf50;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -57,58 +53,93 @@ body {
 .element-1 {
   top: 120px;
   left: 0;
-  z-index: 7;
+  z-index: 6;
+  border-color: #333333;
+  background-color: #454545;
 }
 
 .element-2 {
   top: 120px;
   right: 0;
-  z-index: 6;
+  z-index: 5;
+  border-color: #333333;
+  background-color: #454545;
 }
 
 .element-3 {
-  top: 120px;
-  left: 0;
+  top: 0;
   right: 0;
-  z-index: 5;
-  margin: 0 auto;
+  z-index: 4;
+  border-color: #333333;
+  background-color: #454545;
 }
 
 .element-4 {
   top: 120px;
   left: 0;
   right: 0;
-  z-index: 4;
+  z-index: 3;
   margin: 0 auto;
+  border-color: #333333;
+  background-color: #454545;
 }
 
 .element-5 {
-  top: 0;
-  right: 0;
-  z-index: 3;
-}
-
-.element-6 {
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
   margin: 0 auto;
+  border-color: #333333;
+  background-color: #454545;
 }
 
-.element-7 {
+.element-6 {
   top: 0;
   right: 66.6666666666%;
   z-index: 1;
-  background-image: url('../images/Whatsapp.png');
+  border-color: #333333;
+  background: url('../images/Whatsapp.png') #454545;
   background-repeat: no-repeat;
   background-size: auto 85%;
   background-position: center center;
 }
 
-.element-8 {
+.element-1:hover,
+.element-2:hover,
+.element-3:hover,
+.element-4:hover,
+.element-5:hover,
+.element-6:hover {
+  border-width: 4;
+  border-color: #333333;
+  background-color: #4caf50;
+}
+
+.element-1:active,
+.element-2:active,
+.element-3:active,
+.element-4:active,
+.element-5:active,
+.element-6:active {
+  background-color: #4caf50;
+}
+
+.element-7 {
   top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
+  border-color: rgb(255, 255, 255);
+  background-color: #97be0d;
+}
+
+.element-7:hover {
+  border-width: 2px;
+  border-color: #ffffff;
+  background-color: #5e7524;
+}
+
+.element-7:active {
+  background-color: #d0fb98;
 }
