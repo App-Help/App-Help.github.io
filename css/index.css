@@ -91,7 +91,20 @@ body {
   z-index: 2;
   margin: 0 auto;
   border-color: #333333;
-  background-color: #454545;
+  background: url('../images/Contact.png') #454545;
+  background-repeat: no-repeat;
+  background-size: auto 90px;
+  background-position: center center;
+}
+
+.element-5:hover {
+  border-width: 4;
+  border-color: #333333;
+  background-color: #03a9f4;
+}
+
+.element-5:active {
+  background-color: #03a9f4;
 }
 
 .element-6 {
@@ -109,7 +122,6 @@ body {
 .element-2:hover,
 .element-3:hover,
 .element-4:hover,
-.element-5:hover,
 .element-6:hover {
   border-width: 4;
   border-color: #333333;
@@ -120,7 +132,6 @@ body {
 .element-2:active,
 .element-3:active,
 .element-4:active,
-.element-5:active,
 .element-6:active {
   background-color: #4caf50;
 }
